@@ -11,8 +11,8 @@
 - [X] 服务注册和服务发现：Nacos Discovery
 - [X] 客户端负载均衡：Spring Cloud LoadBalancer
 - [X] 服务调用：RestClient + LoadBalancer
-- [ ] 客户端负载均衡：Dubbo
-- [ ] 服务调用：Dubbo
+- [X] 客户端负载均衡：Dubbo
+- [X] 服务调用：Dubbo
 - [X] 数据库持久层: Spring Data JPA
 - [X] 数据库：H2
 - [X] 数据库连接池：HikariCP

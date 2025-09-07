@@ -1,5 +1,6 @@
 package org.example;
 
+import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestClient;
 
 @EnableDiscoveryClient
+@EnableDubbo
 @SpringBootApplication
 @RestController
 public class ServiceConsumerMain {

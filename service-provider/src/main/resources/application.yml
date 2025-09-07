@@ -9,6 +9,18 @@ server:
       charset: utf-8
       enabled: true
       force: true
+
+dubbo:
+  protocol:
+    name: dubbo
+    port: 20881
+  registry:
+    address: nacos://localhost:8848
+  cloud:
+    subscribed-services: ''
+  scan:
+    base-packages: org.example.service.impl
+
 spring:
   application:
     name: service-provider
@@ -37,4 +49,4 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
+        server-addr: localhost:8848

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestClient;
 
 @Slf4j
-@RequestMapping("/users")
+@RequestMapping("/v1/users")
 @RestController
 public class UserController {
   @Autowired @LoadBalanced private RestClient.Builder loadBalancedRestClientBuilder;

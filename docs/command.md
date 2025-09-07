@@ -21,7 +21,15 @@ curl -s http://localhost:8081/users/1 | jq
   "balance": 1000.0
 }
 # 调用 service-consumer
-curl -s http://localhost:8082/users/1 | jq
+curl -s http://localhost:8082/v1/users/1 | jq
+{
+  "id": 1,
+  "name": "张三",
+  "age": 18,
+  "balance": 1000.0
+}
+# 调用 service-consumer
+curl -s http://localhost:8082/v2/users/1 | jq
 {
   "id": 1,
   "name": "张三",
